@@ -5,20 +5,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Antes</title>
-  <link rel="stylesheet" href="assets/vendors/feather/feather.css">
-  <link rel="stylesheet" href="assets/vendors/ti-icons/css/themify-icons.css">
-  <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
   <link rel="stylesheet" href="assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-  <link rel="stylesheet" href="assets/vendors/ti-icons/css/themify-icons.css">
-  <link rel="stylesheet" type="text/css" href="assets/js/select.dataTables.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="shortcut icon" href="assets/images/logo.png" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="assets/images/logo.png" />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400&display=swap" rel="stylesheet">
+
 
 </head>
 
@@ -27,10 +22,8 @@
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
         <a class="navbar-brand brand-logo me-5" href="index.html">
-          <img
-            src="assets/images/logo-and-text.svg" class="me-2" alt="logo" /></a>
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img
-            src="assets/images/logo.png" alt="logo" /></a>
+          <img src="assets/images/logo-and-text.svg" class="me-2" alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo.png" alt="logo" /></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -154,7 +147,7 @@
               </a>
             </div>
           </li>
-        
+
         </ul>
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
           data-toggle="offcanvas">
@@ -167,39 +160,60 @@
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link" href="index.html">
-              <i class="icon-grid menu-icon"></i>
+              <i class="fa-solid fa-grip menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link" href="staff.html">
+              <i class="fa-solid fa-user-group menu-icon"></i>
+              <span class="menu-title">Staff</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false"
+              aria-controls="ui-basic">
+              <i class="fa-regular fa-calendar-days menu-icon"></i>
+              <span class="menu-title">Service</span>
+              <i class="arrow-select"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="client.html">Client </a></li>
+                <li class="nav-item"> <a class="nav-link" href="service.html">Service</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reports.html">
+              <i class="fa-solid fa-file-circle-check menu-icon"></i>
+              <span class="menu-title">Reports</span>
+            </a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="pages/widgets/widgets.html">
               <i class="fa-regular fa-calendar-days menu-icon"></i>
               <span class="menu-title">Attendance</span>
             </a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="pages/widgets/widgets.html">
               <i class="fa fa-user fa-regular menu-icon"></i>
               <span class="menu-title">Organisation</span>
             </a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="pages/widgets/widgets.html">
               <i class="fa-regular fa-calendar-check menu-icon"></i>
               <span class="menu-title">Tasks</span>
             </a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="pages/widgets/widgets.html">
               <i class="fa-solid fa-file-lines menu-icon"></i>
               <span class="menu-title">Form</span>
             </a>
           </li>
-
           <li class="nav-item">
             <a class="nav-link" href="pages/widgets/widgets.html">
               <i class="fa-solid fa-truck menu-icon"></i>
@@ -212,19 +226,6 @@
               <span class="menu-title">Expenses</span>
             </a>
           </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="pages/widgets/widgets.html">
-              <i class="fa-solid fa-user-group menu-icon"></i>
-              <span class="menu-title">Clients & Sites</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="pages/widgets/widgets.html">
-              <i class="fa-solid fa-file-circle-check menu-icon"></i>
-              <span class="menu-title">Reports</span>
-            </a>
-          </li>
         </ul>
       </nav>
       <div class="main-panel">
@@ -232,22 +233,28 @@
           <div class="">
             <nav class="content-wrapper">
               <div class="nav nav-tabs tab-menu" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true">
                   <i class="fa-solid fa-chart-simple me-2"></i>
                   Overview</button>
-                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
                   <i class="fa-solid fa-location-dot me-2"></i>
                   Live Location</button>
-                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
                   <i class="fa-regular fa-clock me-2"></i>
                   Timeline</button>
-                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
                   <i class="fa-solid fa-grip-lines me-2"></i>
                   Card View</button>
-                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
                   <i class="fa-regular fa-circle-question me-2"></i>
                   Compliance Status</button>
-                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
                   <i class="fa-solid fa-paste me-2"></i>
                   Site Attendance</button>
               </div>
@@ -268,7 +275,7 @@
                           <div class="justify-content-end d-flex">
                             <div class="dropdown flex-md-grow-1 flex-xl-grow-0">
                               <button class="btn btn-primary">
-                                <i class="fa-solid fa-arrow-down me-2"></i> 
+                                <i class="fa-solid fa-arrow-down me-2"></i>
                                 Attendance Status
                               </button>
                               <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuDate2">
@@ -284,27 +291,24 @@
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-md-6 grid-margin stretch-card">
-                      <div class="card tale-bg">
-                        <div class="card-people mt-auto">
-                          <img src="https://www.bootstrapdash.com/demo/skydash/template/images/dashboard/people.svg"
-                            alt="people">
-                          <div class="weather-info">
-                            <div class="d-flex">
-                              <div>
-                                <h2 class="mb-0 font-weight-normal"><i class="icon-sun me-2"></i>31<sup>C</sup></h2>
-                              </div>
-                              <div class="ms-2">
-                                <h4 class="location font-weight-normal">Chicago</h4>
-                                <h6 class="font-weight-normal">Illinois</h6>
-                              </div>
+                    <div class="col-md-4 grid-margin stretch-card">
+
+                      <div class="card">
+                        <div class="card-body">
+                          <h4 class="card-title">Attendance Overview</h4>
+                          <div class="row">
+                            <div class="box">
+
+                              <!-- CHART -->
+                              <canvas id="north-america-chart"></canvas>
+                              <div id="north-america-legend"></div>
                             </div>
                           </div>
                         </div>
                       </div>
+
                     </div>
-                    <div class="col-md-6 grid-margin transparent">
-        
+                    <div class="col-md-8 grid-margin transparent">
                       <div class="card">
                         <div class="card-body">
                           <h4 class="card-title">My Teams</h4>
@@ -321,7 +325,7 @@
                                   <th>
                                     Last location
                                   </th>
-                                  
+
                                 </tr>
                               </thead>
                               <tbody>
@@ -331,13 +335,13 @@
                                     Herman Beck
                                   </td>
                                   <td>
-                                   Punched Out:Yesterday at 8:11 PM
+                                    Punched Out:Yesterday at 8:11 PM
                                   </td>
-                                 
+
                                   <td>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis cu
                                   </td>
-                                  
+
                                 </tr>
                                 <tr>
                                   <td class="py-1">
@@ -345,66 +349,201 @@
                                     Herman Beck
                                   </td>
                                   <td>
-                                   Punched Out:Yesterday at 8:11 PM
+                                    Punched Out:Yesterday at 8:11 PM
                                   </td>
-                                 
+
                                   <td>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis cu
                                   </td>
-                                  
+
                                 </tr>
-        
                                 <tr>
                                   <td class="py-1">
                                     <img src="assets/images/faces/face1.jpg" alt="image">
                                     Herman Beck
                                   </td>
                                   <td>
-                                   Punched Out:Yesterday at 8:11 PM
+                                    Punched Out:Yesterday at 8:11 PM
                                   </td>
-                                 
+
                                   <td>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis cu
                                   </td>
-                                  
+
                                 </tr>
-        
+
                                 <tr>
                                   <td class="py-1">
                                     <img src="assets/images/faces/face1.jpg" alt="image">
                                     Herman Beck
                                   </td>
                                   <td>
-                                   Punched Out:Yesterday at 8:11 PM
+                                    Punched Out:Yesterday at 8:11 PM
                                   </td>
-                                 
+
                                   <td>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis cu
                                   </td>
-                                  
+
+                                </tr>
+
+                                <tr>
+                                  <td class="py-1">
+                                    <img src="assets/images/faces/face1.jpg" alt="image">
+                                    Herman Beck
+                                  </td>
+                                  <td>
+                                    Punched Out:Yesterday at 8:11 PM
+                                  </td>
+
+                                  <td>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis cu
+                                  </td>
+
                                 </tr>
                               </tbody>
                             </table>
                           </div>
                         </div>
                       </div>
-        
+
                     </div>
                   </div>
 
-
-                  <div class="grid-margin stretch-card">
-                    <div class="card">
-                      <div class="card-body">
-                        <h4 class="card-title">Sample</h4>
-                        <div class="row">
-                          <div class="box col-lg-3">
-                            <div id="g7" class="gauge"><svg height="100%" version="1.1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; top: -0.5625px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.1.4</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><filter id="inner-shadow-g7"><feOffset dx="0" dy="3"></feOffset><feGaussianBlur result="offset-blur" stdDeviation="5"></feGaussianBlur><feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse"></feComposite><feFlood flood-color="black" flood-opacity="0.2" result="color"></feFlood><feComposite operator="in" in="color" in2="inverse" result="shadow"></feComposite><feComposite operator="over" in="shadow" in2="SourceGraphic"></feComposite></filter></defs><path fill="#edebeb" stroke="none" d="M55.375,120L38.5,120A75,75,0,0,1,188.5,120L171.625,120A58.125,58.125,0,0,0,55.375,120Z" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" filter="url(#inner-shadow-g7)"></path><path fill="#ff0000" stroke="none" d="M55.375,120L38.5,120A75,75,0,0,1,79.450712519534,53.174510685872406L87.11180220263884,68.21024578155112A58.125,58.125,0,0,0,55.375,120Z" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);" filter="url(#inner-shadow-g7)"></path><text x="113.5" y="23.4375" text-anchor="middle" font-family="sans-serif" font-size="15px" stroke="none" fill="#999999" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 15px; font-weight: bold; fill-opacity: 1;" font-weight="bold" fill-opacity="1"><tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></tspan></text><text x="113.5" y="117.64705882352942" text-anchor="middle" font-family="Arial" font-size="23px" stroke="none" fill="#010101" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 23px; font-weight: bold; fill-opacity: 1;" font-weight="bold" fill-opacity="1"><tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">65</tspan></text><text x="113.5" y="134.18552036199097" text-anchor="middle" font-family="Arial" font-size="10px" stroke="none" fill="#b3b3b3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 1;" font-weight="normal" fill-opacity="1"><tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></tspan></text><text x="46.9375" y="134.18552036199097" text-anchor="middle" font-family="Arial" font-size="10px" stroke="none" fill="#b3b3b3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 1;" font-weight="normal" fill-opacity="1"><tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100</tspan></text><text x="180.0625" y="134.18552036199097" text-anchor="middle" font-family="Arial" font-size="10px" stroke="none" fill="#b3b3b3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 1;" font-weight="normal" fill-opacity="1"><tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text></svg></div>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="grid-margin stretch-card">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">Sample</h4>
+                            <div class="row">
+                              <div class="box">
+                                <div id="g7" class="gauge"><svg height="100%" version="1.1" width="100%"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    style="overflow: hidden; position: relative; top: -0.5625px;">
+                                    <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël
+                                      2.1.4</desc>
+                                    <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                      <filter id="inner-shadow-g7">
+                                        <feOffset dx="0" dy="3"></feOffset>
+                                        <feGaussianBlur result="offset-blur" stdDeviation="5"></feGaussianBlur>
+                                        <feComposite operator="out" in="SourceGraphic" in2="offset-blur"
+                                          result="inverse"></feComposite>
+                                        <feFlood flood-color="black" flood-opacity="0.2" result="color"></feFlood>
+                                        <feComposite operator="in" in="color" in2="inverse" result="shadow">
+                                        </feComposite>
+                                        <feComposite operator="over" in="shadow" in2="SourceGraphic"></feComposite>
+                                      </filter>
+                                    </defs>
+                                    <path fill="#edebeb" stroke="none"
+                                      d="M55.375,120L38.5,120A75,75,0,0,1,188.5,120L171.625,120A58.125,58.125,0,0,0,55.375,120Z"
+                                      style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+                                      filter="url(#inner-shadow-g7)"></path>
+                                    <path fill="#ff0000" stroke="none"
+                                      d="M55.375,120L38.5,120A75,75,0,0,1,79.450712519534,53.174510685872406L87.11180220263884,68.21024578155112A58.125,58.125,0,0,0,55.375,120Z"
+                                      style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+                                      filter="url(#inner-shadow-g7)"></path><text x="113.5" y="23.4375"
+                                      text-anchor="middle" font-family="sans-serif" font-size="15px" stroke="none"
+                                      fill="#999999"
+                                      style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 15px; font-weight: bold; fill-opacity: 1;"
+                                      font-weight="bold" fill-opacity="1">
+                                      <tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></tspan>
+                                    </text><text x="113.5" y="117.64705882352942" text-anchor="middle"
+                                      font-family="Arial" font-size="23px" stroke="none" fill="#010101"
+                                      style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 23px; font-weight: bold; fill-opacity: 1;"
+                                      font-weight="bold" fill-opacity="1">
+                                      <tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">65</tspan>
+                                    </text><text x="113.5" y="134.18552036199097" text-anchor="middle"
+                                      font-family="Arial" font-size="10px" stroke="none" fill="#b3b3b3"
+                                      style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 1;"
+                                      font-weight="normal" fill-opacity="1">
+                                      <tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></tspan>
+                                    </text><text x="46.9375" y="134.18552036199097" text-anchor="middle"
+                                      font-family="Arial" font-size="10px" stroke="none" fill="#b3b3b3"
+                                      style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 1;"
+                                      font-weight="normal" fill-opacity="1">
+                                      <tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100</tspan>
+                                    </text><text x="180.0625" y="134.18552036199097" text-anchor="middle"
+                                      font-family="Arial" font-size="10px" stroke="none" fill="#b3b3b3"
+                                      style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 1;"
+                                      font-weight="normal" fill-opacity="1">
+                                      <tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan>
+                                    </text>
+                                  </svg></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="grid-margin stretch-card">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">Sample</h4>
+                            <div class="row">
+                              <div class="box">
+                                <div id="g7" class="gauge"><svg height="100%" version="1.1" width="100%"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    style="overflow: hidden; position: relative; top: -0.5625px;">
+                                    <desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël
+                                      2.1.4</desc>
+                                    <defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+                                      <filter id="inner-shadow-g7">
+                                        <feOffset dx="0" dy="3"></feOffset>
+                                        <feGaussianBlur result="offset-blur" stdDeviation="5"></feGaussianBlur>
+                                        <feComposite operator="out" in="SourceGraphic" in2="offset-blur"
+                                          result="inverse"></feComposite>
+                                        <feFlood flood-color="black" flood-opacity="0.2" result="color"></feFlood>
+                                        <feComposite operator="in" in="color" in2="inverse" result="shadow">
+                                        </feComposite>
+                                        <feComposite operator="over" in="shadow" in2="SourceGraphic"></feComposite>
+                                      </filter>
+                                    </defs>
+                                    <path fill="#edebeb" stroke="none"
+                                      d="M55.375,120L38.5,120A75,75,0,0,1,188.5,120L171.625,120A58.125,58.125,0,0,0,55.375,120Z"
+                                      style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+                                      filter="url(#inner-shadow-g7)"></path>
+                                    <path fill="#ff0000" stroke="none"
+                                      d="M55.375,120L38.5,120A75,75,0,0,1,79.450712519534,53.174510685872406L87.11180220263884,68.21024578155112A58.125,58.125,0,0,0,55.375,120Z"
+                                      style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+                                      filter="url(#inner-shadow-g7)"></path><text x="113.5" y="23.4375"
+                                      text-anchor="middle" font-family="sans-serif" font-size="15px" stroke="none"
+                                      fill="#999999"
+                                      style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 15px; font-weight: bold; fill-opacity: 1;"
+                                      font-weight="bold" fill-opacity="1">
+                                      <tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></tspan>
+                                    </text><text x="113.5" y="117.64705882352942" text-anchor="middle"
+                                      font-family="Arial" font-size="23px" stroke="none" fill="#010101"
+                                      style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 23px; font-weight: bold; fill-opacity: 1;"
+                                      font-weight="bold" fill-opacity="1">
+                                      <tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">65</tspan>
+                                    </text><text x="113.5" y="134.18552036199097" text-anchor="middle"
+                                      font-family="Arial" font-size="10px" stroke="none" fill="#b3b3b3"
+                                      style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 1;"
+                                      font-weight="normal" fill-opacity="1">
+                                      <tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></tspan>
+                                    </text><text x="46.9375" y="134.18552036199097" text-anchor="middle"
+                                      font-family="Arial" font-size="10px" stroke="none" fill="#b3b3b3"
+                                      style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 1;"
+                                      font-weight="normal" fill-opacity="1">
+                                      <tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100</tspan>
+                                    </text><text x="180.0625" y="134.18552036199097" text-anchor="middle"
+                                      font-family="Arial" font-size="10px" stroke="none" fill="#b3b3b3"
+                                      style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 10px; font-weight: normal; fill-opacity: 1;"
+                                      font-weight="normal" fill-opacity="1">
+                                      <tspan dy="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan>
+                                    </text>
+                                  </svg></div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+
+
 
 
                   <div class="row">
@@ -412,7 +551,8 @@
                       <div class="card">
                         <div class="card-body">
                           <p class="card-title">Order Details</p>
-                          <p class="font-weight-500">The total number of sessions within the date range. It is the period time a
+                          <p class="font-weight-500">The total number of sessions within the date range. It is the
+                            period time a
                             user is actively engaged with your website, page or app, etc</p>
                           <div class="d-flex flex-wrap mb-5">
                             <div class="me-5 mt-3">
@@ -443,7 +583,8 @@
                             <p class="card-title">Sales Report</p>
                             <a href="#" class="text-info">View all</a>
                           </div>
-                          <p class="font-weight-500">The total number of sessions within the date range. It is the period time a
+                          <p class="font-weight-500">The total number of sessions within the date range. It is the
+                            period time a
                             user is actively engaged with your website, page or app, etc</p>
                           <div id="sales-legend" class="chartjs-legend mt-4 mb-2"></div>
                           <canvas id="sales-chart"></canvas>
@@ -465,7 +606,8 @@
                                       <p class="card-title">Detailed Reports</p>
                                       <h1 class="text-primary">$34040</h1>
                                       <h3 class="font-weight-500 mb-xl-4 text-primary">North America</h3>
-                                      <p class="mb-2 mb-xl-0">The total number of sessions within the date range. It is the
+                                      <p class="mb-2 mb-xl-0">The total number of sessions within the date range. It is
+                                        the
                                         period time a user is actively engaged with your website, page or app, etc</p>
                                     </div>
                                   </div>
@@ -478,8 +620,9 @@
                                               <td class="text-muted">Illinois</td>
                                               <td class="w-100 px-0">
                                                 <div class="progress progress-md mx-4">
-                                                  <div class="progress-bar bg-primary" role="progressbar" style="width: 70%"
-                                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                                  <div class="progress-bar bg-primary" role="progressbar"
+                                                    style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
                                                 </div>
                                               </td>
                                               <td>
@@ -490,8 +633,9 @@
                                               <td class="text-muted">Washington</td>
                                               <td class="w-100 px-0">
                                                 <div class="progress progress-md mx-4">
-                                                  <div class="progress-bar bg-warning" role="progressbar" style="width: 30%"
-                                                    aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                                  <div class="progress-bar bg-warning" role="progressbar"
+                                                    style="width: 30%" aria-valuenow="30" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
                                                 </div>
                                               </td>
                                               <td>
@@ -502,8 +646,9 @@
                                               <td class="text-muted">Mississippi</td>
                                               <td class="w-100 px-0">
                                                 <div class="progress progress-md mx-4">
-                                                  <div class="progress-bar bg-danger" role="progressbar" style="width: 95%"
-                                                    aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                                  <div class="progress-bar bg-danger" role="progressbar"
+                                                    style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
                                                 </div>
                                               </td>
                                               <td>
@@ -514,8 +659,9 @@
                                               <td class="text-muted">California</td>
                                               <td class="w-100 px-0">
                                                 <div class="progress progress-md mx-4">
-                                                  <div class="progress-bar bg-info" role="progressbar" style="width: 60%"
-                                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                  <div class="progress-bar bg-info" role="progressbar"
+                                                    style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
                                                 </div>
                                               </td>
                                               <td>
@@ -526,8 +672,9 @@
                                               <td class="text-muted">Maryland</td>
                                               <td class="w-100 px-0">
                                                 <div class="progress progress-md mx-4">
-                                                  <div class="progress-bar bg-primary" role="progressbar" style="width: 40%"
-                                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                                  <div class="progress-bar bg-primary" role="progressbar"
+                                                    style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
                                                 </div>
                                               </td>
                                               <td>
@@ -538,8 +685,9 @@
                                               <td class="text-muted">Alaska</td>
                                               <td class="w-100 px-0">
                                                 <div class="progress progress-md mx-4">
-                                                  <div class="progress-bar bg-danger" role="progressbar" style="width: 75%"
-                                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                  <div class="progress-bar bg-danger" role="progressbar"
+                                                    style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
                                                 </div>
                                               </td>
                                               <td>
@@ -564,7 +712,8 @@
                                       <p class="card-title">Detailed Reports</p>
                                       <h1 class="text-primary">$34040</h1>
                                       <h3 class="font-weight-500 mb-xl-4 text-primary">North America</h3>
-                                      <p class="mb-2 mb-xl-0">The total number of sessions within the date range. It is the
+                                      <p class="mb-2 mb-xl-0">The total number of sessions within the date range. It is
+                                        the
                                         period time a user is actively engaged with your website, page or app, etc</p>
                                     </div>
                                   </div>
@@ -577,8 +726,9 @@
                                               <td class="text-muted">Illinois</td>
                                               <td class="w-100 px-0">
                                                 <div class="progress progress-md mx-4">
-                                                  <div class="progress-bar bg-primary" role="progressbar" style="width: 70%"
-                                                    aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                                  <div class="progress-bar bg-primary" role="progressbar"
+                                                    style="width: 70%" aria-valuenow="70" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
                                                 </div>
                                               </td>
                                               <td>
@@ -589,8 +739,9 @@
                                               <td class="text-muted">Washington</td>
                                               <td class="w-100 px-0">
                                                 <div class="progress progress-md mx-4">
-                                                  <div class="progress-bar bg-warning" role="progressbar" style="width: 30%"
-                                                    aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                                  <div class="progress-bar bg-warning" role="progressbar"
+                                                    style="width: 30%" aria-valuenow="30" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
                                                 </div>
                                               </td>
                                               <td>
@@ -601,8 +752,9 @@
                                               <td class="text-muted">Mississippi</td>
                                               <td class="w-100 px-0">
                                                 <div class="progress progress-md mx-4">
-                                                  <div class="progress-bar bg-danger" role="progressbar" style="width: 95%"
-                                                    aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                                  <div class="progress-bar bg-danger" role="progressbar"
+                                                    style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
                                                 </div>
                                               </td>
                                               <td>
@@ -613,8 +765,9 @@
                                               <td class="text-muted">California</td>
                                               <td class="w-100 px-0">
                                                 <div class="progress progress-md mx-4">
-                                                  <div class="progress-bar bg-info" role="progressbar" style="width: 60%"
-                                                    aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                  <div class="progress-bar bg-info" role="progressbar"
+                                                    style="width: 60%" aria-valuenow="60" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
                                                 </div>
                                               </td>
                                               <td>
@@ -625,8 +778,9 @@
                                               <td class="text-muted">Maryland</td>
                                               <td class="w-100 px-0">
                                                 <div class="progress progress-md mx-4">
-                                                  <div class="progress-bar bg-primary" role="progressbar" style="width: 40%"
-                                                    aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                                  <div class="progress-bar bg-primary" role="progressbar"
+                                                    style="width: 40%" aria-valuenow="40" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
                                                 </div>
                                               </td>
                                               <td>
@@ -637,8 +791,9 @@
                                               <td class="text-muted">Alaska</td>
                                               <td class="w-100 px-0">
                                                 <div class="progress progress-md mx-4">
-                                                  <div class="progress-bar bg-danger" role="progressbar" style="width: 75%"
-                                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                  <div class="progress-bar bg-danger" role="progressbar"
+                                                    style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                                                    aria-valuemax="100"></div>
                                                 </div>
                                               </td>
                                               <td>
@@ -889,8 +1044,8 @@
                                   <p class="mb-0">Data 1</p>
                                   <div class="d-flex justify-content-between align-items-center">
                                     <div class="progress progress-md flex-grow-1 me-4">
-                                      <div class="progress-bar bg-inf0" role="progressbar" style="width: 95%" aria-valuenow="95"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar bg-inf0" role="progressbar" style="width: 95%"
+                                        aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <p class="mb-0">5k</p>
                                   </div>
@@ -899,8 +1054,8 @@
                                   <p class="mb-0">Data 2</p>
                                   <div class="d-flex justify-content-between align-items-center">
                                     <div class="progress progress-md flex-grow-1 me-4">
-                                      <div class="progress-bar bg-info" role="progressbar" style="width: 35%" aria-valuenow="35"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar bg-info" role="progressbar" style="width: 35%"
+                                        aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <p class="mb-0">1k</p>
                                   </div>
@@ -909,8 +1064,8 @@
                                   <p class="mb-0">Data 3</p>
                                   <div class="d-flex justify-content-between align-items-center">
                                     <div class="progress progress-md flex-grow-1 me-4">
-                                      <div class="progress-bar bg-info" role="progressbar" style="width: 48%" aria-valuenow="48"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar bg-info" role="progressbar" style="width: 48%"
+                                        aria-valuenow="48" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <p class="mb-0">992</p>
                                   </div>
@@ -919,8 +1074,8 @@
                                   <p class="mb-0">Data 4</p>
                                   <div class="d-flex justify-content-between align-items-center">
                                     <div class="progress progress-md flex-grow-1 me-4">
-                                      <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25"
-                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar bg-info" role="progressbar" style="width: 25%"
+                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                     <p class="mb-0">687</p>
                                   </div>
@@ -936,7 +1091,8 @@
                               <div class="row">
                                 <div class="col-8 text-white">
                                   <h3>34040</h3>
-                                  <p class="text-white font-weight-500 mb-0">The total number of sessions within the date
+                                  <p class="text-white font-weight-500 mb-0">The total number of sessions within the
+                                    date
                                     range.It is calculated as the sum . </p>
                                 </div>
                                 <div class="col-4 background-icon">
@@ -1042,7 +1198,10 @@
               <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
 
                 <div class="text-center">
-                  <iframe height="300" width="900" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7825.6829922050165!2d75.77502123854562!3d11.273059427512129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65ecc944baa8d%3A0x3385d0308c1d76ab!2sNadakkave%2C%20Kozhikode%2C%20Kerala%20673006!5e0!3m2!1sen!2sin!4v1685687399148!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe height="300" width="900"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7825.6829922050165!2d75.77502123854562!3d11.273059427512129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65ecc944baa8d%3A0x3385d0308c1d76ab!2sNadakkave%2C%20Kozhikode%2C%20Kerala%20673006!5e0!3m2!1sen!2sin!4v1685687399148!5m2!1sen!2sin"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
               </div>
@@ -1059,6 +1218,10 @@
       </div>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="assets/js/donut.js"> </script>
+
 
   <script src="assets/vendors/js/vendor.bundle.base.js"></script>
   <script src="assets/vendors/chart.js/Chart.min.js"></script>
@@ -1074,6 +1237,8 @@
   <script src="assets/js/jquery.cookie.js" type="text/javascript"></script>
   <script src="assets/js/dashboard.js"></script>
   <script src="assets/js/Chart.roundedBarCharts.js"></script>
+  <script src="assets/js/donut.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 </body>
 
 </html>
